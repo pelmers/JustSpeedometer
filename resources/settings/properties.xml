@@ -1,0 +1,10 @@
+<resources>
+    <settings>
+        <setting propertyKey="@Properties.unitType" title="Units">
+            <settingConfig type="list">
+                <listEntry value="0">kph</listEntry>
+                <listEntry value="1">mph</listEntry>
+            </settingConfig>
+		</setting>
+    </settings>
+</resources>

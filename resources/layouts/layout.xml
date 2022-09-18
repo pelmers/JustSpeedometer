@@ -1,0 +1,33 @@
+<layout id="MainLayout">
+    <text-area id="timeText" text="0:00 AM" x="center" y="2%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_MEDIUM</font>
+            <font>Gfx.FONT_XTINY</font>
+        </fonts>
+    </text-area>
+    <drawable id="TopDivider" />
+    <text-area id="avgSpeedText" text="AVG: --" x="center" y="17%" width="fill" height="10%" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_MEDIUM</font>
+            <font>Gfx.FONT_XTINY</font>
+        </fonts>
+    </text-area>
+
+    <label id="curSpeedValue" text="0" x="50%" y="25%" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+
+    <text-area id="headingText" text="--" x="center" y="65%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_MEDIUM</font>
+            <font>Gfx.FONT_XTINY</font>
+        </fonts>
+    </text-area>
+
+    <drawable id="BottomDivider" />
+
+    <text-area id="gpsText" text="NO GPS" x="center" y="82%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_MEDIUM</font>
+            <font>Gfx.FONT_XTINY</font>
+        </fonts>
+    </text-area>
+</layout>

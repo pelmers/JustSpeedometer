@@ -1,0 +1,7 @@
+<strings>
+    <string id="AppName">JustSpeedometer</string>
+    <string id="AppVersion">v1.0.1</string>
+
+    <string id="menu_label_units">Units</string>
+    <string id="menu_label_about">About</string>
+</strings>

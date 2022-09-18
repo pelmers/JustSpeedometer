@@ -1,0 +1,22 @@
+<layout id="AboutLayout">
+    <text-area text="@Strings.AppName" x="center" y="22%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_SMALL</font>
+            <font>Gfx.FONT_TINY</font>
+        </fonts>
+    </text-area>
+    <drawable id="AboutDivider" />
+    <text-area text="by: Peter Elmers" x="center" y="50%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_MEDIUM</font>
+            <font>Gfx.FONT_SMALL</font>
+            <font>Gfx.FONT_TINY</font>
+        </fonts>
+    </text-area>
+    <text-area text="@Strings.AppVersion" x="center" y="75%" width="fill" height="fill" justification="Graphics.TEXT_JUSTIFY_CENTER">
+        <fonts>
+            <font>Gfx.FONT_SMALL</font>
+            <font>Gfx.FONT_TINY</font>
+        </fonts>
+    </text-area>
+</layout>

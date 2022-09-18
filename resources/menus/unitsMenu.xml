@@ -1,0 +1,4 @@
+<menu id="UnitsMenu">
+    <menu-item id="itemKph" label="kph" />
+    <menu-item id="itemMph" label="mph" />
+</menu>

@@ -1,0 +1,12 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <drawable-list id="TopDivider">
+        <shape type="rectangle" width="100%" height="1" x="0" y="16%" color="Graphics.COLOR_WHITE" />
+    </drawable-list>
+    <drawable-list id="BottomDivider">
+        <shape type="rectangle" width="100%" height="1" x="0" y="80%" color="Graphics.COLOR_WHITE" />
+    </drawable-list>
+    <drawable-list id="AboutDivider">
+        <shape type="rectangle" width="100%" height="1" x="0" y="49%" color="Graphics.COLOR_WHITE" />
+    </drawable-list>
+</drawables>

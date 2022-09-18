@@ -1,0 +1,4 @@
+<menu id="MainMenu">
+    <menu-item id="itemUnits" label="@Strings.menu_label_units" />
+    <menu-item id="itemAbout" label="@Strings.menu_label_about" />
+</menu>
