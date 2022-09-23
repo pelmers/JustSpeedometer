@@ -66,6 +66,7 @@ class JustSpeedometerView extends WatchUi.View {
         } else if (quality == Position.QUALITY_NOT_AVAILABLE) {
             gpsText.setText("NO GPS");
             gpsText.setColor(Graphics.COLOR_WHITE);
+            return;
         }
 
         var currentSpeedText = View.findDrawableById("curSpeedValue");
