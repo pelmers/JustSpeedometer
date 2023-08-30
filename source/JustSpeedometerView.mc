@@ -9,7 +9,8 @@ class JustSpeedometerView extends WatchUi.View {
     hidden var nSpeedsObserved = 0;
     hidden var maxSpeedsToAverage = 600;
     hidden var currentAvgSpeed = null;
-    hidden var useKph = true;
+    hidden var unitsFromKphFactor = 1.0;
+    hidden var unitsText = "kph";
 
     function initialize() {
         View.initialize();
@@ -71,11 +72,8 @@ class JustSpeedometerView extends WatchUi.View {
 
         var currentSpeedText = View.findDrawableById("curSpeedValue");
         if (pos has :speed && pos.speed != null) {
-            var kph = pos.speed / 1000 * 3600;
-            if (!useKph) {
-                kph *= 0.621371; 
-            }
-            currentSpeedText.setText(kph.format("%.1f"));
+            var displaySpeed = pos.speed / 1000 * 3600 * unitsFromKphFactor;
+            currentSpeedText.setText(displaySpeed.format("%.1f"));
             currentSpeedText.setColor(Graphics.COLOR_WHITE);
         } else {
             currentSpeedText.setText("0");
@@ -115,13 +113,10 @@ class JustSpeedometerView extends WatchUi.View {
 
     function updateAvgSpeedDisplay() {
         var avgSpeedText = View.findDrawableById("avgSpeedText");
-        var avgSpeedUnitText = (useKph) ? " kph" : " mph";
+        var avgSpeedUnitText = unitsText;
         if (currentAvgSpeed != null) {
-            var kph = currentAvgSpeed / 1000 * 3600;
-            if (!useKph) {
-                kph *= 0.621371; 
-            }
-            avgSpeedText.setText("AVG: " + kph.format("%.2f") + avgSpeedUnitText);
+            var speedDisplay = currentAvgSpeed / 1000 * 3600 * unitsFromKphFactor;
+            avgSpeedText.setText("AVG: " + speedDisplay.format("%.2f") + avgSpeedUnitText);
         } else {
             avgSpeedText.setText("AVG: --" + avgSpeedUnitText);
         }
@@ -130,7 +125,23 @@ class JustSpeedometerView extends WatchUi.View {
     function updateUnits() {
         System.println("updateUnits()");
         var unitTypeValue = Storage.getValue("Properties.unitType");
-        useKph = unitTypeValue == 0 || unitTypeValue == null;
+        if (unitTypeValue == 0) {
+            // km
+            unitsFromKphFactor = 1.0;
+            unitsText = "kph";
+        } else if (unitTypeValue == 1) {
+            // miles
+            unitsFromKphFactor = 0.621371;
+            unitsText = "mph";
+        } else if (unitTypeValue == 2) {
+            // knots
+            unitsFromKphFactor = 0.539957;
+            unitsText = "kt";
+        } else if (unitTypeValue == 3) {
+            // m/s
+            unitsFromKphFactor = 0.277778;
+            unitsText = "m/s";
+        }
     }
 
     // Called when this View is brought to the foreground. Restore

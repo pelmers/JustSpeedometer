@@ -4,6 +4,8 @@
             <settingConfig type="list">
                 <listEntry value="0">kph</listEntry>
                 <listEntry value="1">mph</listEntry>
+                <listEntry value="2">knots</listEntry>
+                <listEntry value="3">m/s</listEntry>
             </settingConfig>
 		</setting>
     </settings>

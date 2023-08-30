@@ -16,6 +16,12 @@ class JustSpeedometerUnitsMenuDelegate extends WatchUi.MenuInputDelegate {
         } else if (item == :itemMph) {
             System.println("set mph");
             Storage.setValue("Properties.unitType", 1);
+        } else if (item == :itemKnots) {
+            System.println("set knots");
+            Storage.setValue("Properties.unitType", 2);
+        } else if (item == :itemMps) {
+            System.println("set m/s");
+            Storage.setValue("Properties.unitType", 3);
         }
     }
 }

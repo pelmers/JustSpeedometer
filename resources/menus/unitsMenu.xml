@@ -1,4 +1,6 @@
 <menu id="UnitsMenu">
     <menu-item id="itemKph" label="kph" />
     <menu-item id="itemMph" label="mph" />
+    <menu-item id="itemKnots" label="knots" />
+    <menu-item id="itemMps" label="m/s" />
 </menu>
