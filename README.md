@@ -18,3 +18,6 @@ Find it on the Garmin connect iq app page!
 Yes you could start a run or cycle activity and see your current ground speed there.
 The advantage of this one is that (just) speed is shown front and center.
 And it saves a few seconds because it won't ask to save the track file afterwards.
+
+## Building for publication
+To build the app for publication, run the vs code command Monkey C: Export Project.
