@@ -7,8 +7,8 @@
     -->
     <!-- public app id -->
     <iq:application id="e4342272-e0e2-4c26-aafc-787a5dc31b37" type="watch-app" name="@Strings.AppName" entry="JustSpeedometerApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.1.0">
-    <!-- beta app id-->
-    <!-- <iq:application id="b6353527-8835-47e1-be9d-f664f5ddf7aa" type="watch-app" name="@Strings.AppName" entry="JustSpeedometerApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.1.0"> -->
+        <!-- beta app id-->
+        <!-- <iq:application id="b6353527-8835-47e1-be9d-f664f5ddf7aa" type="watch-app" name="@Strings.AppName" entry="JustSpeedometerApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.1.0"> -->
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -25,8 +25,14 @@
             <iq:product id="descentmk2s"/>
             <iq:product id="enduro"/>
             <iq:product id="epix2"/>
+            <iq:product id="epix2pro42mm"/>
+            <iq:product id="epix2pro47mm"/>
+            <iq:product id="epix2pro51mm"/>
+            <iq:product id="fenix5"/>
             <iq:product id="fenix5plus"/>
+            <iq:product id="fenix5s"/>
             <iq:product id="fenix5splus"/>
+            <iq:product id="fenix5x"/>
             <iq:product id="fenix5xplus"/>
             <iq:product id="fenix6"/>
             <iq:product id="fenix6pro"/>
@@ -40,24 +46,35 @@
             <iq:product id="fenix7spro"/>
             <iq:product id="fenix7x"/>
             <iq:product id="fenix7xpro"/>
+            <iq:product id="fenix7xpronowifi"/>
+            <iq:product id="fenixchronos"/>
             <iq:product id="fr245"/>
             <iq:product id="fr245m"/>
             <iq:product id="fr255"/>
             <iq:product id="fr255m"/>
             <iq:product id="fr255s"/>
             <iq:product id="fr255sm"/>
+            <iq:product id="fr265"/>
+            <iq:product id="fr265s"/>
             <iq:product id="fr55"/>
+            <iq:product id="fr645"/>
             <iq:product id="fr645m"/>
             <iq:product id="fr745"/>
+            <iq:product id="fr935"/>
             <iq:product id="fr945"/>
             <iq:product id="fr945lte"/>
             <iq:product id="fr955"/>
+            <iq:product id="fr965"/>
             <iq:product id="instinct2"/>
             <iq:product id="instinct2s"/>
+            <iq:product id="instinct2x"/>
+            <iq:product id="instinctcrossover"/>
             <iq:product id="legacyherocaptainmarvel"/>
             <iq:product id="legacyherofirstavenger"/>
             <iq:product id="legacysagadarthvader"/>
             <iq:product id="legacysagarey"/>
+            <iq:product id="marq2"/>
+            <iq:product id="marq2aviator"/>
             <iq:product id="marqadventurer"/>
             <iq:product id="marqathlete"/>
             <iq:product id="marqaviator"/>
